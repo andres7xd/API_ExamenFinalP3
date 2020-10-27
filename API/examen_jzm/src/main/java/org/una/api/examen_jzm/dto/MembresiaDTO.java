@@ -5,10 +5,22 @@
  */
 package org.una.api.examen_jzm.dto;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+
 /**
  *
  * @author Andres
  */
+@Data
+@AllArgsConstructor
+@NoArgsConstructor 
+@ToString
 public class MembresiaDTO {
-    
+    private int periosidad;
+    private double monto;
+    private String descripcion;
+//    private CobroPendienteDTO cobropendiente;
 }
