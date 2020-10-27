@@ -5,10 +5,24 @@
  */
 package org.una.api.examen_jzm.dto;
 
+import java.util.Date;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+
 /**
  *
  * @author Andres
  */
+@Data
+@AllArgsConstructor
+@NoArgsConstructor 
+@ToString
 public class CobroPendienteDTO {
-    
+     private Long id;
+    private int año;
+    private int periodo;
+    private Date fecha_vencimiento;
+    private double monto;
 }
