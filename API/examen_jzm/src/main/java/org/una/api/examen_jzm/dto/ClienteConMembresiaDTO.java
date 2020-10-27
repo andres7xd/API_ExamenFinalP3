@@ -20,5 +20,7 @@ import lombok.ToString;
 @ToString
 public class ClienteConMembresiaDTO {
     private Long id;
+    private ClienteDTO cliente;
+    private MembresiaDTO membresia;
     
 }

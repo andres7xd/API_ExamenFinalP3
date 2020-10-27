@@ -9,6 +9,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
+import org.una.api.examen_jzm.entities.CobroPendiente;
 
 /**
  *
@@ -22,5 +23,5 @@ public class MembresiaDTO {
     private int periosidad;
     private double monto;
     private String descripcion;
-//    private CobroPendienteDTO cobropendiente;
+    private CobroPendienteDTO cobro_pendiente;
 }

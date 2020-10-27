@@ -35,7 +35,12 @@ public class ClienteConMembresia implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     
-//    @ManyToOne
-//    @JoinColumn(name = "Tramites_Registrados_Id")
-//    private Tramites_Registrados Tramites_Registrados;
+    @ManyToOne
+    @JoinColumn(name = "cliente_id")
+    private Cliente cliente;
+    
+    
+    @ManyToOne
+    @JoinColumn(name = "membresia_id")
+    private Membresia membresia;
 }
