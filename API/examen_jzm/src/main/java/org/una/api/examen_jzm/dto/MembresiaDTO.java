@@ -5,6 +5,7 @@
  */
 package org.una.api.examen_jzm.dto;
 
+import java.util.Date;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -20,8 +21,9 @@ import org.una.api.examen_jzm.entities.CobroPendiente;
 @NoArgsConstructor 
 @ToString
 public class MembresiaDTO {
-    private int periosidad;
+    private String periosidad;
     private double monto;
     private String descripcion;
-    private CobroPendienteDTO cobro_pendiente;
+    private Date fecha_inscripcion;
+    
 }

@@ -12,6 +12,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -33,6 +35,10 @@ import lombok.ToString;
 @NoArgsConstructor
 @ToString
 public class CobroPendiente implements Serializable{
+     
+    @ManyToOne
+    @JoinColumn(name = "membresia_id")
+    private Membresia membresia_id;
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -51,4 +57,5 @@ public class CobroPendiente implements Serializable{
       
      @Column(name = "Monto")
     private double monto;
+    
 }
