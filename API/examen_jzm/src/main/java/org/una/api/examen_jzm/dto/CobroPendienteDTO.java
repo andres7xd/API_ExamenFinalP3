@@ -25,5 +25,6 @@ public class CobroPendienteDTO {
     private int periodo;
     private Date fecha_vencimiento;
     private double monto;
+    private String tipo_de_servicio;
     private MembresiaDTO membresia_id;
 }

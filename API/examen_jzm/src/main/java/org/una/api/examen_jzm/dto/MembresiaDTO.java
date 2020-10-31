@@ -21,6 +21,7 @@ import org.una.api.examen_jzm.entities.CobroPendiente;
 @NoArgsConstructor 
 @ToString
 public class MembresiaDTO {
+    private Long id;
     private String periosidad;
     private double monto;
     private String descripcion;

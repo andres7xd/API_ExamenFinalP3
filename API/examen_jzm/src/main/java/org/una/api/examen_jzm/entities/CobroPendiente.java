@@ -44,18 +44,21 @@ public class CobroPendiente implements Serializable{
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     
-    @Column(name = "Año")
+    @Column(name = "año")
     private int año;
     
-    @Column(name = "Periodo")
+    @Column(name = "periodo")
     private int periodo;
     
-    @Column(name = "fecha_vencimineto", updatable = false)
+     @Column(name = "tipo_de_servicio", length = 15)
+    private String tipo_de_servicio;
+    
+    @Column(name = "fecha_vencimiento", updatable = false)
     @Temporal(TemporalType.DATE)
     @Setter(AccessLevel.NONE)
     private Date fecha_vencimiento;
       
-     @Column(name = "Monto")
+     @Column(name = "monto")
     private double monto;
     
 }

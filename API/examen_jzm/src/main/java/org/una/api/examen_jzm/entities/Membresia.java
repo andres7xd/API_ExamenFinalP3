@@ -50,7 +50,7 @@ public class Membresia implements Serializable {
     
     
     
-    @Column(name = "fecha_vencimineto", updatable = false)
+    @Column(name = "fecha_inscripcion", updatable = false)
     @Temporal(TemporalType.DATE)
     @Setter(AccessLevel.NONE)
     private Date fecha_inscripcion;
